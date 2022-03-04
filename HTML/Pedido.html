@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="Carlos">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Pedido </title>
+<link href="styles/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<Body>
+
+<table style="margin: 0 auto;" style="text-align: center;" background-color: TABLE BGCOLOR=#FFF3F9>
+     
+    <tr>
+       <th><img src="./graficos/logo.png" alt="logo pasteleria" width="100px" style="text-align: left;"></th>
+       <th width="150px">¿Quienes somos? </th>
+       <th width="150px">Nuestros Pasteles</th>>
+       <th width="150px">Pedidos</th>
+    </tr>
+</table>
+
+
+<H1 style="text-align: center;" style="color: #FFF3F9"> Pide y se te empalagará</H1>
+
+
+    <form action="pedido.js">
+        <label for="Nombre">Tu dulce nombre</label><br>
+        <input type="Text" id="Nombre" Name="Nombre" placeholder="Nombre"><br><br>
+        <label for="correo1">Danos tu correo</label><br>
+        <input type="email" id="correo1" name="correo1"placeholder="correo"><br><br>
+        <label for="tel1">Apunta tu telefono</label><br>
+        <input type="tel" id="tel1" name="tel1" maxlength="10"placeholder="01 800  DULZURA"><br><br>
+
+  
+        <h2>Elije el tamaño del empalago</h2><br>
+        <input type="radio" id="pequeño" name="tamaño" value="pequeño">
+        <label for="pequeño">pequeño</label><br>
+        <input type="radio" id="Mediano" name="tamaño" value="Mediano">
+        <label for="Medianoe">Mediano</label><br>
+        <input type="radio" id="GRANDE" name="tamaño" value="GRANDE">
+        <label for="GRANDE">GRANDE</label><br><br>
+
+
+        <h2>Elije un sabor o varios</h2><br>
+        <input type="checkbox" id="sabor1" name="sabor1" value="chocolate">
+        <label for="sabor1">Chocolate</label><br>
+        <input type="checkbox" id="sabor2" name="sabor2" value="cafe">
+        <label for="sabor2">Café</label><br>
+        <input type="checkbox" id="sabor3" name="sabor3" value="tres leches">
+        <label for="sabor3">Tres Leches</label><br><br><br><br>
+        
+        <h2>Adorna tu antojo</h2>
+        <label for="Adornos">Elige lo que irá sobre el pastel</label><br>
+        <input list="Adornos">
+        <datalist id="Adornos">
+            <option value="Chispas de colores">
+            <option value="Betún">
+            <option value="Fruta">
+        </datalist><br><br><br><br>
+
+        <h2>¿Cuando quieres disfrutar tu pastel?</h2>
+        <input type="date" id="fechapedido" name="fechapedido"min="2022-03-10"><br> 
+        <br><br>
+
+        <textarea name="comentarios" rows="10" cols="40">¡Alguna instruccion especial?</textarea><br><br>
+        <input type="reset" value="Borrar"><br>
+        <input type="submit"Value="PEDIR" onclick="alert('A esperar la dulzura');"><br>
+    </form><br><br><br>
+
+
+    <table style="margin: 0 auto;" style="text-align: center;" background-color: TABLE BGCOLOR=#FFF3F9>
+     
+        <tr>
+           <th><img src="./graficos/logo.png" alt="logo pasteleria" width="250px" ></th>
+           <th width="400px"style="text-align: center;"><h3> Carranza #456</h3><h4>Tel:4555 555 55 </h4><h5>horario: 11:00 AM -  8:00 Pm</h5> </th>
+        </tr>
+    </table>
+    
+</Body>
+</html>
